@@ -27,6 +27,10 @@ def fibonacci(n):
     for _ in range(2, n + 1):
         a, b = b, a + b
     return b
+<<<<<<< develop
+
+=======
+>>>>>>> main
 
 def is_power_of_five(n):
     """Повертає True, якщо число є степенем п'ятірки."""
@@ -42,7 +46,10 @@ def gcd(a, b):
     while b != 0:
         a, b = b, a % b
     return abs(a)
+<<<<<<< develop
+=======
 
 def helloworld():
     for i in range(10):
         print("Hello World!")
+>>>>>>> main

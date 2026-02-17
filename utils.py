@@ -27,8 +27,22 @@ def fibonacci(n):
     for _ in range(2, n + 1):
         a, b = b, a + b
     return b
+
+def is_power_of_five(n):
+    """Повертає True, якщо число є степенем п'ятірки."""
+    if n < 1:
+        return False
+    while n % 5 == 0:
+        n //= 5
+    return n == 1
+print(fibonacci(10))
+
 def gcd(a, b):
     """Обчислює НСД (найбільший спільний дільник) двох чисел."""
     while b != 0:
         a, b = b, a % b
     return abs(a)
+
+def helloworld():
+    for i in range(10):
+        print("Hello World!")
